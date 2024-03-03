@@ -243,6 +243,8 @@ label {
 }
 
 
+
+
 .product-box {
 
     &__heading {
@@ -715,21 +717,24 @@ label {
         border: none;
 
     }
-}
+}   
 
+.delete_button{
+    padding-right: 15px;
+}
 .cart {
     padding-top: 96px;
     padding-bottom: 128px;
-
     display: flex;
     justify-content: space-between;
 
     &__card {
-        width: 652px;
+        margin-left: 250px;
+        width: 650px;
         box-sizing: border-box;
         display: flex;
         flex-direction: column;
-        gap: 40px;
+        
     }
 
     &__card-first,
@@ -781,6 +786,19 @@ label {
         }
     }
 
+     &__price{
+        padding-bottom: 15px;
+     }
+    &__color{
+        display: flex;
+        gap: 15px;
+        padding-bottom: 15px;
+    }
+    &__size{
+        display: flex;
+        gap: 15px;
+        padding-bottom: 15px;
+    }
     &__price::after {
         content: '$300';
         color: $colorSelect;
@@ -1442,17 +1460,23 @@ label {
         padding: 65px 62px;
     }
 
+    }
+    .cart-box{
+        flex-direction: column;
+        align-items: center;
+    }
+
     .cart {
         flex-direction: column;
         align-items: center;
     }
 
-    .cart__card {
-        width: 734px;
-    }
+  
+        
 
     .cart__header {
-        gap: 200px;
+        gap: 45px;
+        flex-direction: row-reverse;
     }
 
     .cart__buttons {
@@ -1510,7 +1534,7 @@ label {
         padding-bottom: 70px;
         justify-content: space-evenly;
     }
-}
+
 
 @media (min-width: 1024px) and (max-width: 1129px) {
 
@@ -1771,6 +1795,7 @@ label {
 
     .cart__info {
         align-items: center;
+        
     }
 
     .cart__buttons {
@@ -1804,6 +1829,10 @@ label {
         margin-bottom: 0;
         width: 220px;
         font-size: 14px;
+    }
+
+    .cart_input{
+        display: flex;
     }
 
     .registr {

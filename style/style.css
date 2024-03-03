@@ -597,6 +597,10 @@ label {
   border: none;
 }
 
+.delete_button {
+  padding-right: 15px;
+}
+
 .cart {
   padding-top: 96px;
   padding-bottom: 128px;
@@ -604,11 +608,11 @@ label {
   justify-content: space-between;
 }
 .cart__card {
-  width: 652px;
+  margin-left: 250px;
+  width: 650px;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
-  gap: 40px;
 }
 .cart__card-first, .cart__card-second {
   display: flex;
@@ -647,6 +651,19 @@ label {
   fill: #F16D7F;
   color: #fff;
   transition: 0.3s;
+}
+.cart__price {
+  padding-bottom: 15px;
+}
+.cart__color {
+  display: flex;
+  gap: 15px;
+  padding-bottom: 15px;
+}
+.cart__size {
+  display: flex;
+  gap: 15px;
+  padding-bottom: 15px;
 }
 .cart__price::after {
   content: "$300";
@@ -1206,61 +1223,78 @@ label {
   .top_content__info_1 {
     padding: 65px 62px;
   }
-  .cart {
-    flex-direction: column;
-    align-items: center;
-  }
-  .cart__card {
-    width: 734px;
-  }
-  .cart__header {
-    gap: 200px;
-  }
-  .cart__buttons {
-    justify-content: space-evenly;
-  }
-  .cart__info {
-    flex-direction: row;
-    gap: 15px;
-  }
-  .cart__info__address {
-    margin-top: 60px;
-  }
-  .cart__purchase {
-    margin-top: 119px;
-  }
-  .registr {
-    gap: 22px;
-  }
-  .registr__data {
-    margin-left: 16.5px;
-  }
-  .registr__info {
-    font-size: 16px;
-    padding-right: 16px;
-    gap: 32px;
-  }
-  .sale {
-    margin-left: 16px;
-    margin-right: 16px;
-    gap: 18px;
-  }
-  .footer__text {
-    margin-left: 30px;
-  }
-  .footer__items {
-    margin-right: 30px;
-  }
-  .feature {
-    justify-content: space-evenly;
-    margin-top: 63px;
-  }
-  .subs {
-    padding-top: 53px;
-    padding-bottom: 70px;
-    justify-content: space-evenly;
-  }
 }
+.cart-box {
+  flex-direction: column;
+  align-items: center;
+}
+
+.cart {
+  flex-direction: column;
+  align-items: center;
+}
+
+.cart__header {
+  gap: 45px;
+  flex-direction: row-reverse;
+}
+
+.cart__buttons {
+  justify-content: space-evenly;
+}
+
+.cart__info {
+  flex-direction: row;
+  gap: 15px;
+}
+
+.cart__info__address {
+  margin-top: 60px;
+}
+
+.cart__purchase {
+  margin-top: 119px;
+}
+
+.registr {
+  gap: 22px;
+}
+
+.registr__data {
+  margin-left: 16.5px;
+}
+
+.registr__info {
+  font-size: 16px;
+  padding-right: 16px;
+  gap: 32px;
+}
+
+.sale {
+  margin-left: 16px;
+  margin-right: 16px;
+  gap: 18px;
+}
+
+.footer__text {
+  margin-left: 30px;
+}
+
+.footer__items {
+  margin-right: 30px;
+}
+
+.feature {
+  justify-content: space-evenly;
+  margin-top: 63px;
+}
+
+.subs {
+  padding-top: 53px;
+  padding-bottom: 70px;
+  justify-content: space-evenly;
+}
+
 @media (min-width: 1024px) and (max-width: 1129px) {
   .product-box__content {
     grid-template-columns: repeat(auto-fit, 320px);
@@ -1491,6 +1525,9 @@ label {
     margin-bottom: 0;
     width: 220px;
     font-size: 14px;
+  }
+  .cart_input {
+    display: flex;
   }
   .registr {
     flex-direction: column;
